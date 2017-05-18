@@ -231,7 +231,7 @@ class Dola
 
             // Loop through all the packages and get the version of dola
             foreach ($file->packages as $package) {
-                if ($package->name == 'tcg/dola') {
+                if ($package->name == 'dfz/dola') {
                     $this->version = $package->version;
                     break;
                 }
