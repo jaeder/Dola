@@ -1,9 +1,9 @@
 <?php
 
-namespace TCG\Voyager\Database\Types\Mysql;
+namespace DFZ\Dola\Database\Types\Mysql;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use TCG\Voyager\Database\Types\Type;
+use DFZ\Dola\Database\Types\Type;
 
 class MultiPointType extends Type
 {
