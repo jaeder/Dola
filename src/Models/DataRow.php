@@ -1,6 +1,6 @@
 <?php
 
-namespace Dola\Models;
+namespace DFZ\Dola\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
