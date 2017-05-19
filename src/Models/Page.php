@@ -10,7 +10,7 @@ class Page extends Model
 {
     use Translatable;
 
-    protected $table = 'dola_pages';
+    protected $table = 'pages';
 
     protected $translatable = ['title', 'slug', 'body'];
 

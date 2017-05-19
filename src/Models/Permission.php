@@ -8,7 +8,7 @@ class Permission extends Model
 {
     protected $guarded = [];
 
-    protected $table = 'dola_permissions';
+    protected $table = 'permissions';
 
     public function roles()
     {

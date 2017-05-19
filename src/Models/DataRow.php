@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DataRow extends Model
 {
-    protected $table = 'dola_data_rows';
+    protected $table = 'data_rows';
 
     protected $guarded = [];
 

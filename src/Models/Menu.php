@@ -11,7 +11,7 @@ use DFZ\Dola\Facades\Dola;
  */
 class Menu extends Model
 {
-    protected $table = 'dola_menus';
+    protected $table = 'menus';
 
     protected $guarded = [];
 

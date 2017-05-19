@@ -9,7 +9,7 @@ class Role extends Model
 {
     protected $guarded = [];
 
-    protected $table = 'dola_roles';
+    protected $table = 'roles';
 
     public function users()
     {

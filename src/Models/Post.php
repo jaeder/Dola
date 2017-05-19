@@ -12,7 +12,7 @@ class Post extends Model
 {
     use Translatable;
 
-    protected $table = 'dola_posts';
+    protected $table = 'posts';
 
     protected $translatable = ['title', 'seo_title', 'excerpt', 'body', 'slug', 'meta_description', 'meta_keywords'];
 

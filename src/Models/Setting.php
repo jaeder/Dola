@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model
 {
-    protected $table = 'dola_settings';
+    protected $table = 'settings';
 
     protected $guarded = [];
 
