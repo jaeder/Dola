@@ -14,7 +14,7 @@ class CreatePagesTable extends Migration
     public function up()
     {
         // Create table for storing roles
-        Schema::create('dola_pages', function (Blueprint $table) {
+        Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('author_id');
             $table->string('title');
@@ -36,6 +36,6 @@ class CreatePagesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('dola_pages');
+        Schema::drop('pages');
     }
 }

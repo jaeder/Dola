@@ -73,13 +73,13 @@ class DolaServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'dola');
 
         if (app()->version() >= 5.4) {
-            $router->aliasMiddleware('admin.user', DolaAdminMiddleware::class);
+            $router->aliasMiddleware('dola.user', DolaAdminMiddleware::class);
 
             if (config('app.env') == 'testing') {
                 $this->loadMigrationsFrom(realpath(__DIR__.'/migrations'));
             }
         } else {
-            $router->middleware('admin.user', DolaAdminMiddleware::class);
+            $router->middleware('dola.user', DolaAdminMiddleware::class);
         }
 
         $this->registerViewComposers();

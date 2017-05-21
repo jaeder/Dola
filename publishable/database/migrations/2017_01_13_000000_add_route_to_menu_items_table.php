@@ -13,7 +13,7 @@ class AddRouteToMenuItemsTable extends Migration
      */
     public function up()
     {
-        Schema::table('dola_menu_items', function (Blueprint $table) {
+        Schema::table('menu_items', function (Blueprint $table) {
             $table->string('route')->nullable()->default(null);
             $table->text('parameters')->nullable()->default(null);
         });
@@ -26,7 +26,7 @@ class AddRouteToMenuItemsTable extends Migration
      */
     public function down()
     {
-        Schema::table('dola_menu_items', function (Blueprint $table) {
+        Schema::table('menu_items', function (Blueprint $table) {
             $table->dropColumn('route');
             $table->dropColumn('parameters');
         });

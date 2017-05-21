@@ -13,7 +13,7 @@ class CreateCategoriesTable extends Migration
     public function up()
     {
         // Create table for storing categories
-        Schema::create('dola_categories', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('parent_id')->unsigned()->nullable()->default(null);
             $table->foreign('parent_id')->references('id')->on('dola_categories')->onUpdate('cascade')->onDelete('set null');
@@ -31,6 +31,6 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('dola_categories');
+        Schema::drop('categories');
     }
 }

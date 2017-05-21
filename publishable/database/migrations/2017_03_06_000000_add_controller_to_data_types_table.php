@@ -13,7 +13,7 @@ class AddControllerToDataTypesTable extends Migration
      */
     public function up()
     {
-        Schema::table('dola_data_types', function (Blueprint $table) {
+        Schema::table('data_types', function (Blueprint $table) {
             $table->string('controller')->nullable()->after('model_name');
         });
     }
@@ -25,7 +25,7 @@ class AddControllerToDataTypesTable extends Migration
      */
     public function down()
     {
-        Schema::table('dola_data_types', function (Blueprint $table) {
+        Schema::table('data_types', function (Blueprint $table) {
             $table->dropColumn('controller');
         });
     }

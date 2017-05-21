@@ -13,7 +13,7 @@ class CreatePermissionGroupsTable extends Migration
      */
     public function up()
     {
-        Schema::create('dola_permission_groups', function (Blueprint $table) {
+        Schema::create('permission_groups', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
         });
@@ -26,6 +26,6 @@ class CreatePermissionGroupsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dola_permission_groups');
+        Schema::dropIfExists('permission_groups');
     }
 }

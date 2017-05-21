@@ -6,7 +6,7 @@ return [
     | User config
     |--------------------------------------------------------------------------
     |
-    | Here you can specify voyager user configs
+    | Here you can specify dola user configs
     |
     */
 
@@ -22,7 +22,7 @@ return [
     | Controllers config
     |--------------------------------------------------------------------------
     |
-    | Here you can specify voyager controller settings
+    | Here you can specify dola controller settings
     |
     */
 
@@ -47,10 +47,10 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Path to the Voyager Assets
+    | Path to the Dola Assets
     |--------------------------------------------------------------------------
     |
-    | Here you can specify the location of the voyager assets path
+    | Here you can specify the location of the dola assets path
     |
     */
 
@@ -85,7 +85,7 @@ return [
     | Database Config
     |--------------------------------------------------------------------------
     |
-    | Here you can specify voyager database settings
+    | Here you can specify dola database settings
     |
     */
 
@@ -100,7 +100,7 @@ return [
     | Multilingual configuration
     |--------------------------------------------------------------------------
     |
-    | Here you can specify if you want Voyager to ship with support for
+    | Here you can specify if you want Dola to ship with support for
     | multilingual and what locales are enabled.
     |
     */
@@ -130,28 +130,28 @@ return [
     | Widgets Config
     |--------------------------------------------------------------------------
     |
-    | Here you can specify voyager administration settings
+    | Here you can specify dola administration settings
     |
     */
 
     'widgets' => [
         [
             'name'  => 'User',
-            'icon'  => 'voyager-group',
+            'icon'  => 'dola-group',
             'model' => DFZ\Dola\Models\User::class,
             'url'   => 'admin/users',
             'image' => '/images/widget-backgrounds/02.png',
         ],
         [
             'name'  => 'Post',
-            'icon'  => 'voyager-news',
+            'icon'  => 'dola-news',
             'model' => DFZ\Dola\Models\Post::class,
             'url'   => 'admin/posts',
             'image' => '/images/widget-backgrounds/03.png',
         ],
         [
             'name'  => 'Page',
-            'icon'  => 'voyager-file-text',
+            'icon'  => 'dola-file-text',
             'model' => DFZ\Dola\Models\Page::class,
             'url'   => 'admin/pages',
             'image' => '/images/widget-backgrounds/04.png',
@@ -173,16 +173,16 @@ return [
             'Profile' => [
                 'route'         => 'dola.profile',
                 'classes'       => 'class-full-of-rum',
-                'icon_class'    => 'voyager-person',
+                'icon_class'    => 'dola-person',
             ],
             'Home' => [
                 'route'         => '/',
-                'icon_class'    => 'voyager-home',
+                'icon_class'    => 'dola-home',
                 'target_blank'  => true,
             ],
             'Logout' => [
                 'route'      => 'dola.logout',
-                'icon_class' => 'voyager-power',
+                'icon_class' => 'dola-power',
             ],
         ],
 
@@ -203,7 +203,7 @@ return [
     | UI Generic Config
     |--------------------------------------------------------------------------
     |
-    | Here you change some of the Voyager UI settings.
+    | Here you change some of the Dola UI settings.
     |
     | TODO: Move style properties to assets/css
     |

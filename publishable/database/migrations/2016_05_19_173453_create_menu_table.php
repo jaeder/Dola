@@ -12,13 +12,13 @@ class CreateMenuTable extends Migration
      */
     public function up()
     {
-        Schema::create('dola_menus', function (Blueprint $table) {
+        Schema::create('menus', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
             $table->timestamps();
         });
 
-        Schema::create('dola_menu_items', function (Blueprint $table) {
+        Schema::create('menu_items', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('menu_id')->nullable();
             $table->string('title');
@@ -31,8 +31,8 @@ class CreateMenuTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('dola_menu_items', function (Blueprint $table) {
-            $table->foreign('menu_id')->references('id')->on('dola_menus')->onDelete('cascade');
+        Schema::table('menu_items', function (Blueprint $table) {
+            $table->foreign('menu_id')->references('id')->on('menus')->onDelete('cascade');
         });
     }
 
@@ -43,7 +43,7 @@ class CreateMenuTable extends Migration
      */
     public function down()
     {
-        Schema::drop('dola_menu_items');
-        Schema::drop('dola_menus');
+        Schema::drop('menu_items');
+        Schema::drop('menus');
     }
 }

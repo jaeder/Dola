@@ -13,7 +13,7 @@ class AddPermissionGroupIdToPermissionsTable extends Migration
      */
     public function up()
     {
-        Schema::table('dola_permissions', function (Blueprint $table) {
+        Schema::table('permissions', function (Blueprint $table) {
             $table->integer('permission_group_id')->unsigned()->nullable()->default(null);
         });
     }
@@ -25,7 +25,7 @@ class AddPermissionGroupIdToPermissionsTable extends Migration
      */
     public function down()
     {
-        Schema::table('dola_permissions', function (Blueprint $table) {
+        Schema::table('permissions', function (Blueprint $table) {
             $table->dropColumn('permission_group_id');
         });
     }

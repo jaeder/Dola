@@ -13,7 +13,7 @@ class CreatePostsTable extends Migration
     public function up()
     {
         // Create table for storing roles
-        Schema::create('dola_posts', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('author_id');
             $table->integer('category_id')->nullable();
@@ -40,6 +40,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('dola_posts');
+        Schema::drop('posts');
     }
 }
