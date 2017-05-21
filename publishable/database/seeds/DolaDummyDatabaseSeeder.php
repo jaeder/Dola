@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use DFZ\Dola\Traits\Seedable;
 
-class VoyagerDummyDatabaseSeeder extends Seeder
+class DolaDummyDatabaseSeeder extends Seeder
 {
     use Seedable;
 

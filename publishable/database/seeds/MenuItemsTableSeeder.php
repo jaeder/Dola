@@ -16,7 +16,7 @@ class MenuItemsTableSeeder extends Seeder
         if (file_exists(base_path('routes/web.php'))) {
             require base_path('routes/web.php');
 
-            $menu = Menu::where('name', 'admin')->firstOrFail();
+            $menu = Menu::where('name', 'dola')->firstOrFail();
 
             $menuItem = MenuItem::firstOrNew([
                 'menu_id'    => $menu->id,
@@ -26,7 +26,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-boat',
+                    'icon_class' => 'dola-boat',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 1,
@@ -41,7 +41,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-images',
+                    'icon_class' => 'dola-images',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 5,
@@ -56,7 +56,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-news',
+                    'icon_class' => 'dola-news',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 6,
@@ -71,7 +71,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-person',
+                    'icon_class' => 'dola-person',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 3,
@@ -86,7 +86,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-categories',
+                    'icon_class' => 'dola-categories',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 8,
@@ -101,7 +101,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-file-text',
+                    'icon_class' => 'dola-file-text',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 7,
@@ -116,7 +116,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-lock',
+                    'icon_class' => 'dola-lock',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 2,
@@ -131,7 +131,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$toolsMenuItem->exists) {
                 $toolsMenuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-tools',
+                    'icon_class' => 'dola-tools',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 9,
@@ -146,7 +146,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-list',
+                    'icon_class' => 'dola-list',
                     'color'      => null,
                     'parent_id'  => $toolsMenuItem->id,
                     'order'      => 10,
@@ -161,7 +161,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-data',
+                    'icon_class' => 'dola-data',
                     'color'      => null,
                     'parent_id'  => $toolsMenuItem->id,
                     'order'      => 11,
@@ -176,7 +176,7 @@ class MenuItemsTableSeeder extends Seeder
             if (!$menuItem->exists) {
                 $menuItem->fill([
                     'target'     => '_self',
-                    'icon_class' => 'voyager-settings',
+                    'icon_class' => 'dola-settings',
                     'color'      => null,
                     'parent_id'  => null,
                     'order'      => 12,
